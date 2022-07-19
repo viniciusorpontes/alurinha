@@ -1,0 +1,12 @@
+.cabecalhoPrincipal .container {
+    /* Coloca um item do lado do outro */
+    display: flex;
+    /* Alinha os itens verticalmente */
+    align-items: center;
+    /* Coloca o espaço vazio entre os itens */
+    justify-content: space-between;
+}
+
+.cabecalhoPrincipal-nav {
+    display: flex;
+}
