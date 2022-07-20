@@ -10,3 +10,37 @@
 .cabecalhoPrincipal-nav {
     display: flex;
 }
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    width: 70%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    /* Coloca o espaço vazio igualmente entre os elementos */
+    justify-content: space-around;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    /* Muda a direção padrão do flex de row para column */
+    flex-direction: column;
+    /* Faz o flex-item ir para a próxima coluna se exceder a altura, ou para a próxima linha se exceder a largura */
+    flex-wrap: wrap;
+    /* Substitui as duas linhas de cima em uma só */
+    flex-flow: column wrap;
+    height: 255px;
+}
