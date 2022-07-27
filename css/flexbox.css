@@ -11,6 +11,46 @@
     display: flex;
 }
 
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+    margin: 1%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n + 1) {
+    margin-left: 0;
+} 
+
+.videoSobre .container {
+    display: flex;
+}
+
+.videoSobre-video {
+    /* Preenche os espaços em "branco" aumentando a largura do elemento */
+    flex-grow: 2;
+    /* Faz com que o elemento diminua a quantidade do vezes do valor */
+    flex-shrink: 2;
+}
+
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
+
 .rodapePrincipal-patrocinadores .container {
     display: flex;
     align-items: center;
@@ -45,25 +85,6 @@
     height: 255px;
 }
 
-
-.conteudoPrincipal-cursos {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.conteudoPrincipal-cursos-link {
-    width: 23%;
-    margin: 1%;
-}
-
-.conteudoPrincipal-cursos-link:nth-child(4n) {
-    margin-right: 0;
-}
-
-.conteudoPrincipal-cursos-link:nth-child(4n + 1) {
-    margin-left: 0;
-} 
-
 @media(max-width: 768px) {
     .cabecalhoPrincipal .container {
         flex-direction: column;
@@ -73,6 +94,10 @@
     
     .cabecalhoPrincipal-nav {
         flex-direction: column;
+    }
+
+    .cabecalhoPrincipal-nav-link-app {
+        order: -1;
     }
     
     .conteudoPrincipal-cursos {
@@ -91,6 +116,14 @@
     .conteudoPrincipal-cursos-link:nth-child(4n + 1) {
         margin-left: 1%;
     } 
+
+    .videoSobre .container {
+        flex-direction: column;
+    }    
+
+    .videoSobre-video {
+        margin: 0 auto;
+    }
     
     .rodapePrincipal-navMap-list {
         height: auto;
